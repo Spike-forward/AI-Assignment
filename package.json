@@ -1,0 +1,24 @@
+{
+  "name": "ai-assignment-1",
+  "version": "1.0.0",
+  "description": "自動搜集圖像數據集與初步處理",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "ts-node src/index.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "axios": "^1.6.2",
+    "better-sqlite3": "^12.5.0",
+    "cheerio": "^1.0.0-rc.12",
+    "playwright": "^1.57.0",
+    "sharp": "^0.33.1"
+  },
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.13",
+    "@types/node": "^20.10.4",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}

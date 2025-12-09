@@ -1,0 +1,3005 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=utf-8">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List href="習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/filelist.xml">
+<link rel=Edit-Time-Data href="習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>LAU Saint Lan, Winnie</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Patrick Lee</o:LastAuthor>
+  <o:Revision>2</o:Revision>
+  <o:TotalTime>2</o:TotalTime>
+  <o:Created>2025-11-30T09:31:00Z</o:Created>
+  <o:LastSaved>2025-11-30T09:31:00Z</o:LastSaved>
+  <o:Pages>5</o:Pages>
+  <o:Words>881</o:Words>
+  <o:Characters>1032</o:Characters>
+  <o:Lines>64</o:Lines>
+  <o:Paragraphs>106</o:Paragraphs>
+  <o:CharactersWithSpaces>1807</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData href="習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:DisplayBackgroundShape/>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:PunctuationKerning/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>ZH-TW</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+   <w:DontGrowAutofit/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:EnableOpenTypeKerning/>
+   <w:DontFlipMirrorIndents/>
+   <w:OverrideTableStyleHps/>
+   <w:UseFELayout/>
+  </w:Compatibility>
+  <w:DoNotOptimizeForBrowser/>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="376">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" Priority="0" SemiHidden="true"
+   UnhideWhenUsed="true" Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Link"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:新細明體;
+	panose-1:2 2 5 0 0 0 0 0 0 0;
+	mso-font-alt:PMingLiU;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611969 684719354 22 0 1048577 0;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-536869121 1107305727 33554432 0 415 0;}
+@font-face
+	{font-family:DengXian;
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-alt:等线;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+@font-face
+	{font-family:"Arial Unicode MS";
+	panose-1:2 11 6 4 2 2 2 2 2 4;
+	mso-font-alt:Arial;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:auto;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"Liberation Serif";
+	mso-font-alt:"Times New Roman";
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:FreeSans;
+	mso-font-alt:Calibri;
+	mso-font-charset:0;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:0 0 0 0 0 0;}
+@font-face
+	{font-family:"\@新細明體";
+	panose-1:2 1 6 1 0 1 1 1 1 1;
+	mso-font-charset:136;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611969 684719354 22 0 1048577 0;}
+@font-face
+	{font-family:"\@DengXian";
+	panose-1:2 1 6 0 3 1 1 1 1 1;
+	mso-font-charset:134;
+	mso-generic-font-family:auto;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610612033 953122042 22 0 262159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:新細明體;
+	mso-fareast-theme-font:minor-fareast;
+	mso-ansi-language:EN-GB;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:內文;
+	margin-top:20.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:20.0pt;
+	font-family:"Arial",sans-serif;
+	mso-font-kerning:0pt;
+	mso-ansi-language:EN-GB;
+	font-weight:normal;}
+h2
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:內文;
+	margin-top:18.0pt;
+	margin-right:0cm;
+	margin-bottom:6.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:2;
+	font-size:16.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ansi-language:EN-GB;
+	font-weight:normal;}
+h3
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:內文;
+	margin-top:16.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:14.0pt;
+	font-family:"Arial",sans-serif;
+	color:#434343;
+	mso-ansi-language:EN-GB;
+	font-weight:normal;}
+h4
+	{mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:內文;
+	margin-top:14.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:4;
+	font-size:12.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	mso-ansi-language:EN-GB;
+	font-weight:normal;}
+h5
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:內文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:5;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	mso-ansi-language:EN-GB;
+	font-weight:normal;}
+h6
+	{mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-qformat:yes;
+	mso-style-next:內文;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:4.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	mso-outline-level:6;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	color:#666666;
+	mso-ansi-language:EN-GB;
+	font-weight:normal;
+	font-style:italic;
+	mso-bidi-font-style:normal;}
+p.MsoHeader, li.MsoHeader, div.MsoHeader
+	{mso-style-link:"頁首 字元";
+	margin:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:新細明體;
+	mso-fareast-theme-font:minor-fareast;
+	mso-ansi-language:EN-GB;}
+p.MsoFooter, li.MsoFooter, div.MsoFooter
+	{mso-style-priority:99;
+	mso-style-link:"頁尾 字元";
+	margin:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	tab-stops:center 207.65pt right 415.3pt;
+	layout-grid-mode:char;
+	font-size:10.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:新細明體;
+	mso-fareast-theme-font:minor-fareast;
+	mso-ansi-language:EN-GB;}
+p.MsoTitle, li.MsoTitle, div.MsoTitle
+	{mso-style-priority:10;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:內文;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:26.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:新細明體;
+	mso-fareast-theme-font:minor-fareast;
+	mso-ansi-language:EN-GB;}
+p.MsoSubtitle, li.MsoSubtitle, div.MsoSubtitle
+	{mso-style-priority:11;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-next:內文;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:16.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan lines-together;
+	page-break-after:avoid;
+	font-size:15.0pt;
+	font-family:"Arial",sans-serif;
+	mso-fareast-font-family:Arial;
+	color:#666666;
+	mso-ansi-language:EN-GB;}
+span.a
+	{mso-style-name:"頁首 字元";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:頁首;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+span.a0
+	{mso-style-name:"頁尾 字元";
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:頁尾;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+p.Textbody, li.Textbody, div.Textbody
+	{mso-style-name:"Text body";
+	mso-style-unhide:no;
+	margin-top:0cm;
+	margin-right:0cm;
+	margin-bottom:7.0pt;
+	margin-left:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	mso-hyphenate:none;
+	text-autospace:ideograph-other;
+	font-size:12.0pt;
+	font-family:"Liberation Serif",serif;
+	mso-fareast-font-family:新細明體;
+	mso-bidi-font-family:FreeSans;
+	mso-font-kerning:1.5pt;
+	mso-fareast-language:ZH-CN;
+	mso-bidi-language:HI;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:11.0pt;
+	mso-ansi-font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ascii-font-family:Arial;
+	mso-hansi-font-family:Arial;
+	mso-bidi-font-family:Arial;
+	mso-font-kerning:0pt;
+	mso-ligatures:none;
+	mso-ansi-language:EN-GB;}
+.MsoPapDefault
+	{mso-style-type:export-only;
+	line-height:115%;}
+ /* Page Definitions */
+ @page
+	{mso-page-border-surround-header:no;
+	mso-page-border-surround-footer:no;
+	mso-footnote-separator:url("習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/header.html") fs;
+	mso-footnote-continuation-separator:url("習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/header.html") fcs;
+	mso-endnote-separator:url("習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/header.html") es;
+	mso-endnote-continuation-separator:url("習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/header.html") ecs;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:72.0pt 72.0pt 72.0pt 72.0pt;
+	mso-header-margin:36.0pt;
+	mso-footer-margin:36.0pt;
+	mso-page-numbers:1;
+	mso-header:url("習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/header.html") h1;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+ /* List Definitions */
+ @list l0
+	{mso-list-id:173804606;
+	mso-list-template-ids:-1407141666;}
+@list l0:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l0:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l1
+	{mso-list-id:195316268;
+	mso-list-template-ids:-1630909422;}
+@list l1:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l1:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l2
+	{mso-list-id:619343539;
+	mso-list-template-ids:931952282;}
+@list l2:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:72.0pt;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l2:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:108.0pt;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l2:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:144.0pt;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l2:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:180.0pt;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l2:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:216.0pt;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l2:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:252.0pt;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l2:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:288.0pt;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l2:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:324.0pt;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l2:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	margin-left:360.0pt;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l3
+	{mso-list-id:701201915;
+	mso-list-template-ids:-1316467572;}
+@list l3:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l3:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l3:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l3:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l3:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l3:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l3:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l3:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l3:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l4
+	{mso-list-id:725761143;
+	mso-list-template-ids:-733062376;}
+@list l4:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l4:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l4:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l4:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l4:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l4:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l4:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l4:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l4:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l5
+	{mso-list-id:728920843;
+	mso-list-template-ids:1907901278;}
+@list l5:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l5:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l5:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l5:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l5:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l5:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l5:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l5:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l5:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l6
+	{mso-list-id:865408695;
+	mso-list-template-ids:1026610978;}
+@list l6:level1
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l6:level2
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l6:level3
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l6:level4
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l6:level5
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l6:level6
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l6:level7
+	{mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l6:level8
+	{mso-level-number-format:alpha-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l6:level9
+	{mso-level-number-format:roman-lower;
+	mso-level-tab-stop:none;
+	mso-level-number-position:right;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l7
+	{mso-list-id:1141769012;
+	mso-list-template-ids:20455376;}
+@list l7:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l7:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l7:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l7:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l7:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l7:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l7:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l7:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l7:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l8
+	{mso-list-id:1297106015;
+	mso-list-template-ids:-2105403798;}
+@list l8:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l8:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l8:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l8:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l8:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l8:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l8:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l8:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l8:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l9
+	{mso-list-id:1472670843;
+	mso-list-template-ids:1809749036;}
+@list l9:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l9:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l9:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l9:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l9:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l9:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l9:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l9:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l9:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l10
+	{mso-list-id:1532768080;
+	mso-list-template-ids:-1509812360;}
+@list l10:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l10:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l10:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l10:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l10:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l10:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l10:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l10:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l10:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l11
+	{mso-list-id:1576016187;
+	mso-list-template-ids:1103003624;}
+@list l11:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l11:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l11:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l11:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l11:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l11:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l11:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l11:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l11:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l12
+	{mso-list-id:1742748527;
+	mso-list-template-ids:-1942731526;}
+@list l12:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l12:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l12:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l12:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l12:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l12:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l12:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l12:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l12:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l13
+	{mso-list-id:1764644145;
+	mso-list-template-ids:201066828;}
+@list l13:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l13:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l13:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l13:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l13:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l13:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l13:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l13:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l13:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l14
+	{mso-list-id:1765565183;
+	mso-list-template-ids:1348527712;}
+@list l14:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l14:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l14:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l14:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l14:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l14:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l14:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l14:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l14:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l15
+	{mso-list-id:1898315942;
+	mso-list-template-ids:472034616;}
+@list l15:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l15:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l15:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l15:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l15:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l15:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l15:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l15:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l15:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l16
+	{mso-list-id:2102068843;
+	mso-list-template-ids:-1183273648;}
+@list l16:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l16:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l16:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l16:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l16:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l16:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l16:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l16:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l16:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l17
+	{mso-list-id:2105375075;
+	mso-list-template-ids:1275612626;}
+@list l17:level1
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l17:level2
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l17:level3
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l17:level4
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l17:level5
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l17:level6
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l17:level7
+	{mso-level-number-format:bullet;
+	mso-level-text:●;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l17:level8
+	{mso-level-number-format:bullet;
+	mso-level-text:○;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+@list l17:level9
+	{mso-level-number-format:bullet;
+	mso-level-text:■;
+	mso-level-tab-stop:none;
+	mso-level-number-position:left;
+	text-indent:-18.0pt;
+	text-decoration:none;
+	text-underline:none;}
+ol
+	{margin-bottom:0cm;}
+ul
+	{margin-bottom:0cm;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:表格內文;
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ansi-language:EN-GB;}
+table.TableNormal
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-unhide:no;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 0cm 0cm 0cm;
+	mso-para-margin:0cm;
+	line-height:115%;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Arial",sans-serif;
+	mso-ansi-language:EN-GB;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="2050"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="2"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body bgcolor=white lang=ZH-TW style='tab-interval:36.0pt;word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><a
+name="_Hlk198113950"><b style='mso-bidi-font-weight:normal'><span
+style='font-family:DengXian;mso-bidi-font-family:新細明體'>香港專業進修學校</span></b></a></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bookmark:_Hlk198113950'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-GB style='font-family:DengXian'>2024-2025</span></b></span><span
+style='mso-bookmark:_Hlk198113950'><b style='mso-bidi-font-weight:normal'><span
+style='font-family:DengXian;mso-bidi-font-family:新細明體'>年度第二學期</span></b></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='mso-bookmark:_Hlk198113950'><a name="_Hlk147230337"><b style='mso-bidi-font-weight:
+normal'><span style='font-family:DengXian;mso-bidi-font-family:新細明體'>應用教育文憑</span></b></a></span><span
+style='mso-bookmark:_Hlk198113950'><span style='mso-bookmark:_Hlk147230337'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-family:DengXian'>
+(</span></b></span></span><span style='mso-bookmark:_Hlk198113950'><span
+style='mso-bookmark:_Hlk147230337'><span class=GramE><b style='mso-bidi-font-weight:
+normal'><span style='font-family:DengXian;mso-bidi-font-family:新細明體'>兼讀制</span></b></span></span></span><span
+style='mso-bookmark:_Hlk198113950'><span style='mso-bookmark:_Hlk147230337'><b
+style='mso-bidi-font-weight:normal'><span lang=EN-GB style='font-family:DengXian'>)</span></b></span></span></p>
+
+<span style='mso-bookmark:_Hlk147230337'></span>
+
+<p class=Textbody align=center style='text-align:center'><span
+style='mso-bookmark:_Hlk198113950'><b style='mso-bidi-font-weight:normal'><span
+lang=ZH-CN style='font-family:DengXian;color:black'>智能科技應用及手機程式設計</span></b></span><span
+style='mso-bookmark:_Hlk198113950'><b style='mso-bidi-font-weight:normal'><span
+lang=EN-US style='font-family:DengXian;color:black;mso-fareast-language:ZH-TW'>-</span></b></span><span
+style='mso-bookmark:_Hlk198113950'><b style='mso-bidi-font-weight:normal'><span
+lang=ZH-CN style='font-family:DengXian'>人工智能原理及應用</span></b></span><span
+style='mso-bookmark:_Hlk198113950'><span lang=EN-GB style='mso-ansi-language:
+EN-GB'><o:p></o:p></span></span></p>
+
+<span style='mso-bookmark:_Hlk198113950'></span>
+
+<p class=MsoNormal><span lang=EN-US style='mso-ansi-language:EN-US'><o:p>&nbsp;</o:p></span></p>
+
+<h1><a name="_uw4m08f6ceqe"></a><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>習作<span
+class=GramE>一</span>：自動搜集圖像數據集與初步處理</span></h1>
+
+<h2><a name="_8quh04hng7fe"></a><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>習作簡介</span></h2>
+
+<p class=MsoNormal><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>本習作旨在透過<span
+class=GramE>編程實作</span>，加強學生在使用編程實現自動化圖像數據集搜集和初步處理方面的技能。學生實踐自動化網絡搜索、圖片下載和預處理圖像，為後續分析做好準備。</span></p>
+
+<p class=MsoNormal style='margin-top:10.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>此習作<span
+class=GramE>佔</span>本科目總分的<span lang=EN-GB> 15%</span></span></b><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>。</span><b style='mso-bidi-font-weight:
+normal'><span lang=EN-GB><o:p></o:p></span></b></p>
+
+<h2><a name="_joaji4md0dff"></a><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>習作要求</span></h2>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo8'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>使用指定的關鍵字在網上搜尋圖像<span class=GramE>（</span>例如：<span
+lang=EN-GB>Google </span>圖像搜索<span class=GramE>）</span></span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt;text-indent:-18.0pt;mso-list:l2 level1 lfo17'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>需有<span lang=EN-GB> 3000 </span>至<span
+lang=EN-GB> 5000 </span><span class=GramE>個</span>圖像</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo8'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>收集圖像的網址（<span class=SpellE><span
+lang=EN-GB>src</span></span>）和替代文字（<span lang=EN-GB>alt</span>）</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo8'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>將圖像下載到本地資料夾</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo8'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>將圖像調整大小並置中裁剪為不超過<span lang=EN-GB>
+500x500 </span>像素，編碼為<span lang=EN-GB> JPEG (50-80 quality)</span></span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo8'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>如果圖像大小超過<span lang=EN-GB> 50KB</span>，繼續調整為更小的尺寸，直至符合要求</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo8'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>列出收集的圖像數量</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo8'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>程式可用<span lang=EN-GB> Typescript</span>，<span
+class=SpellE><span lang=EN-GB>Javascript</span></span>，或者<span lang=EN-GB>
+Python </span>實現</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l7 level1 lfo8'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>適當使用<span class=GramE>函數和類來</span>組織代碼，使其清晰易於理解和維護</span></p>
+
+<h2><a name="_h6z9n3c4et8f"></a><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>建議使用編程庫</span></h2>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l11 level1 lfo16'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>Playwright: </span><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>用於自動驅動瀏覽器</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l11 level1 lfo16'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>Sharp / <span class=SpellE>tensorflowjs</span>
+/ pillow / <span class=SpellE>opencv</span>: </span><span style='font-family:
+"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+"Arial Unicode MS"'>用於縮放、裁剪和轉換圖像格式</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l11 level1 lfo16'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>quick-<span class=SpellE>erd</span>: </span><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>用於設計和維護數據庫</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l11 level1 lfo16'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+lang=EN-GB style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>better-sqlite3-proxy: </span><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>用於存取數據庫</span></p>
+
+<h2><a name="_tsq0x6lmwaoi"></a><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>數據集主題</span></h2>
+
+<p class=MsoNormal><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>每位學生會被分配到一個圖像數據集主題<span
+lang=EN-GB> <span class=SpellE>i</span></span>，其中<span lang=EN-GB> <span
+class=SpellE>i</span> </span>是學生<span lang=EN-GB> ID </span>除以<span lang=EN-GB>
+10 </span>的餘數。</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm'><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>假設學生<span
+lang=EN-GB> ID </span>是<span lang=EN-GB> 28361933</span>，那麼：</span></p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='margin-top:12.0pt;mso-list:l6 level1 lfo1'><span
+     style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+     mso-bidi-font-family:"Arial Unicode MS"'>計算<span lang=EN-GB> 28361933
+     mod  10 </span>得到<span lang=EN-GB> 3</span></span></li>
+ <li class=MsoNormal style='margin-bottom:12.0pt;mso-list:l6 level1 lfo1'><span
+     style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+     mso-bidi-font-family:"Arial Unicode MS"'>學生會被分配到圖像數據集<span lang=EN-GB> 3 </span>的主題</span></li>
+</ol>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+12.0pt;margin-left:0cm'><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>以下是十個主題：</span></p>
+
+<ol style='margin-top:0cm' start=1 type=1>
+ <li class=MsoNormal style='margin-top:12.0pt;mso-list:l4 level1 lfo10'><span
+     style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+     mso-bidi-font-family:"Arial Unicode MS"'>人類<span lang=EN-GB>/</span>人<span
+     class=GramE>形動漫</span>角色，各類型的性別和職業</span></li>
+ <li class=MsoNormal style='mso-list:l4 level1 lfo10'><span style='font-family:
+     "Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+     "Arial Unicode MS"'>各類型的貓咪品種</span></li>
+</ol>
+
+<ol style='margin-top:0cm' start=3 type=1>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo1'><span style='font-family:
+     "Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+     "Arial Unicode MS"'>不同風格的建築物</span></li>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo1'><span style='font-family:
+     "Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+     "Arial Unicode MS"'>城市中的交通工具</span></li>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo1'><span style='font-family:
+     "Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+     "Arial Unicode MS"'>各種不同品種的狗</span></li>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo1'><span style='font-family:
+     "Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+     "Arial Unicode MS"'>多樣化的自然風景</span></li>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo1'><span style='font-family:
+     "Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+     "Arial Unicode MS"'>不同時代的時尚服飾</span></li>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo1'><span style='font-family:
+     "Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+     "Arial Unicode MS"'>各種運動中的運動員</span></li>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo1'><span style='font-family:
+     "Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+     "Arial Unicode MS"'>世界各地的特色美食</span></li>
+ <li class=MsoNormal style='mso-list:l6 level1 lfo1'><span style='font-family:
+     "Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:
+     "Arial Unicode MS"'>不同情感表達的人物</span></li>
+</ol>
+
+<h2><a name="_o4jftyhorm7h"></a><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>程式運行範例</span></h2>
+
+<p class=MsoNormal><span lang=EN-GB style='mso-no-proof:yes'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="image1.png" o:spid="_x0000_i1026" type="#_x0000_t75"
+ style='width:454.5pt;height:240.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/image001.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=606 height=321
+src="習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/image002.gif" v:shapes="image1.png"><![endif]></span></p>
+
+<p class=MsoNormal><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>收集的圖像範例：</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l14 level1 lfo7'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=GramE><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>動漫人物</span></span><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>圖片</span></p>
+
+<p class=MsoNormal><span lang=EN-GB style='mso-no-proof:yes'><!--[if gte vml 1]><v:shape
+ id="image2.png" o:spid="_x0000_i1025" type="#_x0000_t75" style='width:480pt;
+ height:308.5pt;visibility:visible;mso-wrap-style:square'>
+ <v:imagedata src="習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/image003.png" o:title=""/>
+</v:shape><![endif]--><![if !vml]><img width=640 height=411
+src="習作一：自動搜集圖像數據集與初步處理%20-%20學生指引.files/image004.jpg" v:shapes="image2.png"><![endif]></span></p>
+
+<h2><a name="_fy3zzls7q473"></a><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>評分標準</span></h2>
+
+<h3><a name="_3wj4s05gphf2"></a><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>評分標準概要</span></h3>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>搜索和收集（<span
+lang=EN-GB>30 </span>分）</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l1 level1 lfo15'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>關鍵字搜索和結果相關性：<span lang=EN-GB>15 </span>分</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l1 level2 lfo15'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>○<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>有效使用關鍵字，獲得相關圖像。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l1 level1 lfo15'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>收集圖像的網址和替代文字：<span lang=EN-GB>15 </span>分</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l1 level2 lfo15'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>○<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>正確收集並記錄圖像的<span lang=EN-GB> <span
+class=SpellE>src</span> </span>和<span lang=EN-GB> alt </span>信息。</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>圖像下載和處理（<span
+lang=EN-GB>50 </span>分）</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l13 level1 lfo14'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>下載和<span class=GramE>儲檔</span>：<span
+lang=EN-GB>20 </span>分</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l13 level2 lfo14'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>○<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>成功下載圖像<span lang=EN-GB> 3000 </span>至<span
+lang=EN-GB> 5000 </span><span class=GramE>個</span>圖像。</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l13 level2 lfo14'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>○<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>儲存在相應的文件夾。</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l13 level2 lfo14'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>○<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>列出收集的圖像數量。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l13 level1 lfo14'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>調整和裁剪：<span lang=EN-GB>20 </span>分</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l13 level2 lfo14'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>○<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>正確調整大小並置中裁剪為不超過<span lang=EN-GB>
+500x500 </span>像素。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l13 level1 lfo14'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>重新編碼和尺寸控制：<span lang=EN-GB>10 </span>分</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l13 level2 lfo14'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>○<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>圖像重新編碼為<span lang=EN-GB> JPEG</span>，質量設置在<span
+lang=EN-GB> 50-80</span>，並確保大小不超過<span lang=EN-GB> 50KB</span>。</span></p>
+
+<p class=MsoNormal style='line-height:150%'><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>自動化和代碼質量（<span
+lang=EN-GB>20 </span>分）</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l5 level1 lfo13'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>自動化程度：<span lang=EN-GB>10 </span>分</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l5 level2 lfo13'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>○<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>自動化處理數據搜集和下載的能力。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l5 level1 lfo13'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>程式碼結構和<span class=GramE>註</span>釋：<span
+lang=EN-GB>10 </span>分</span></p>
+
+<p class=MsoNormal style='margin-left:72.0pt;text-indent:-18.0pt;line-height:
+150%;mso-list:l5 level2 lfo13'><![if !supportLists]><span lang=EN-GB
+style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>○<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>代碼的模組化、清晰度和<span class=GramE>註</span>釋的完整性。</span></p>
+
+<p class=MsoNormal><span lang=EN-GB><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>總分：<span lang=EN-GB>100 </span>分，<span
+class=GramE>佔</span>本科目總分的<span lang=EN-GB> 15%</span>。</span><span lang=EN-GB><o:p></o:p></span></b></p>
+
+<h3><a name="_44gyxwnjnght"></a><span style='font-family:"Arial Unicode MS";
+mso-fareast-font-family:"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>具體評分標準</span></h3>
+
+<h4><a name="_c00bq8l901r6"></a><b style='mso-bidi-font-weight:normal'><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>搜索和收集（<span lang=EN-GB>30 </span>分）</span><span
+lang=EN-GB><o:p></o:p></span></b></h4>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+2.0pt;margin-left:0cm'><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>關鍵字搜索和結果相關性：<span
+lang=EN-GB>15 </span>分</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l8 level1 lfo12'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>優良：使用精確關鍵字，獲得<span lang=EN-GB>90%</span>以上相關圖像。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo12'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>滿意：使用較好關鍵字，獲得<span lang=EN-GB>70%-89%</span>相關圖像。</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l8 level1 lfo12'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>有待改善：使用不當關鍵字，獲得少於<span lang=EN-GB>70%</span>相關圖像。</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+2.0pt;margin-left:0cm'><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>收集圖像的網址和替代文字：<span
+lang=EN-GB>15 </span>分</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l10 level1 lfo6'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>優良：所有圖像的<span lang=EN-GB> <span
+class=SpellE>src</span> </span>和<span lang=EN-GB> alt </span>信息完整、正確。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l10 level1 lfo6'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>滿意：大部分圖像的<span lang=EN-GB> <span
+class=SpellE>src</span> </span>和<span lang=EN-GB> alt </span>信息正確，少量缺失。</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l10 level1 lfo6'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>有待改善：許多圖像的<span lang=EN-GB> <span
+class=SpellE>src</span> </span>和<span lang=EN-GB> alt </span>信息缺失或錯誤。</span></p>
+
+<h4><a name="_gfs31dln1y6g"></a><b style='mso-bidi-font-weight:normal'><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>圖像下載和處理（<span lang=EN-GB>50 </span>分）</span><span
+lang=EN-GB><o:p></o:p></span></b></h4>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+2.0pt;margin-left:0cm'><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>下載和<span
+class=GramE>儲檔</span>：<span lang=EN-GB>20 </span>分</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l0 level1 lfo11'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>優良：成功下載<span lang=EN-GB> 3000 </span>至<span
+lang=EN-GB> 5000 </span><span class=GramE>個</span>圖像，並正確儲存在相應的文件夾。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo11'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>滿意：大部分圖像下載成功，數量接近要求。</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l0 level1 lfo11'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>有待改善：多個圖像未下載或數量不足。</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+2.0pt;margin-left:0cm'><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>調整和裁剪：<span
+lang=EN-GB>20 </span>分</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l17 level1 lfo3'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>優良：所有圖像正確調整和裁剪為不超過<span lang=EN-GB>
+500x500 </span>像素。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l17 level1 lfo3'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>滿意：大部分圖像正確調整和裁剪，少數有誤。</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l17 level1 lfo3'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>有待改善：多數圖像未正確調整或裁剪。</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+2.0pt;margin-left:0cm'><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>重新編碼和尺寸控制：<span
+lang=EN-GB>10 </span>分</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l15 level1 lfo4'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>優良：所有圖像重新編碼為<span lang=EN-GB> JPEG</span>，質量<span
+lang=EN-GB> 50-80</span>，大小不超過<span lang=EN-GB> 50KB</span>。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l15 level1 lfo4'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>滿意：大部分圖像符合要求，少數超過<span lang=EN-GB>
+50KB</span>。</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l15 level1 lfo4'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>有待改善：多數圖像未達到質量或尺寸要求。</span></p>
+
+<h4><a name="_ohpxhsazt8"></a><b style='mso-bidi-font-weight:normal'><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>自動化和代碼質量（<span lang=EN-GB>20 </span>分）</span><span
+lang=EN-GB><o:p></o:p></span></b></h4>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+2.0pt;margin-left:0cm'><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>自動化程度：<span
+lang=EN-GB>10 </span>分</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l9 level1 lfo2'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>優良：完全自動化，無需人工干預。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l9 level1 lfo2'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>滿意：部分自動化，少量人工干預。</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l9 level1 lfo2'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>有待改善：需要大量人工操作。</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+2.0pt;margin-left:0cm'><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>程式碼結構和<span
+class=GramE>註</span>釋：<span lang=EN-GB>10 </span>分</span></p>
+
+<p class=MsoNormal style='margin-top:12.0pt;margin-right:0cm;margin-bottom:
+0cm;margin-left:36.0pt;margin-bottom:.0001pt;text-indent:-18.0pt;mso-list:l16 level1 lfo9'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>優良：代碼結構<span class=GramE>清晰，</span>模組化良好，<span
+class=GramE>註</span>釋詳盡。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l16 level1 lfo9'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>滿意：代碼結構基本<span class=GramE>清晰，</span>有基本<span
+class=GramE>註</span>釋。</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l16 level1 lfo9'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>有待改善：代碼結構混亂，缺乏<span class=GramE>註</span>釋。</span></p>
+
+<h2 style='margin-bottom:12.0pt'><a name="_e6o4dyhcty78"></a><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>提交格式</span></h2>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l12 level1 lfo5'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+class=GramE><span style='font-family:"Arial Unicode MS";mso-fareast-font-family:
+"Arial Unicode MS";mso-bidi-font-family:"Arial Unicode MS"'>將源代碼</span></span><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>、數據庫、和下載了的圖像壓縮成<span lang=EN-GB> ZIP </span>檔案。</span></p>
+
+<p class=MsoNormal style='margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo18'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>確保所有更改都已提交並<span class=GramE>註</span>釋清楚。</span></p>
+
+<p class=MsoNormal style='margin-top:0cm;margin-right:0cm;margin-bottom:12.0pt;
+margin-left:36.0pt;text-indent:-18.0pt;mso-list:l3 level1 lfo18'><![if !supportLists]><span
+lang=EN-GB style='mso-fareast-font-family:Arial'><span style='mso-list:Ignore'>●<span
+style='font:7.0pt "Times New Roman"'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span></span></span><![endif]><span
+style='font-family:"Arial Unicode MS";mso-fareast-font-family:"Arial Unicode MS";
+mso-bidi-font-family:"Arial Unicode MS"'>包含程序輸出<span class=GramE>的截圖或</span>輸出日誌文件。</span></p>
+
+</div>
+
+</body>
+
+</html>
