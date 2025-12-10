@@ -37,9 +37,10 @@
 - [x] 確保每張圖片不超過 50KB
 
 ### Step 5: 最終報告與提交
-- [ ] 建立 report.ts 生成統計報告
-- [ ] 截圖程式輸出
-- [ ] 壓縮 ZIP 檔案提交
+- [x] 建立 report.ts 生成統計報告
+- [x] 生成 output_log.txt 輸出日誌
+- [x] 準備 submission/ 提交資料夾
+- [x] Git Push 到遠端儲存庫
 
 ---
 
