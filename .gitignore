@@ -1,1 +1,23 @@
-node_modules
+# Dependencies
+node_modules/
+
+# Build output
+dist/
+
+# Database (large file)
+data.db
+
+# Images folders (too large for Git)
+images/
+processed/
+
+# Submission folder (for teacher only, not for Git)
+submission/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
