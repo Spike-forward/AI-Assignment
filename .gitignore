@@ -11,8 +11,9 @@ data.db
 images/
 processed/
 
-# Submission folder (for teacher only, not for Git)
+# Submission folder and ZIP (for teacher only, not for Git)
 submission/
+*.zip
 
 # OS files
 .DS_Store

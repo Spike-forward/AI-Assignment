@@ -1,5 +1,5 @@
 {
-  "name": "ai-assignment-1",
+  "name": "ai-assignment",
   "version": "1.0.0",
   "description": "自動搜集圖像數據集與初步處理",
   "main": "dist/index.js",
@@ -9,11 +9,13 @@
     "start": "node dist/index.js"
   },
   "dependencies": {
+    "@tensorflow/tfjs": "^4.22.0",
     "axios": "^1.6.2",
     "better-sqlite3": "^12.5.0",
     "cheerio": "^1.0.0-rc.12",
+    "image-hash": "^7.0.1",
     "playwright": "^1.57.0",
-    "sharp": "^0.33.1"
+    "sharp": "^0.33.5"
   },
   "devDependencies": {
     "@types/better-sqlite3": "^7.6.13",
