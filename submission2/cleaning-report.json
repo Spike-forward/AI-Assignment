@@ -1,0 +1,23 @@
+{
+  "timestamp": "2025-12-26T04:31:53.778Z",
+  "stats": {
+    "total": 4098,
+    "passed": 3479,
+    "rejected": {
+      "tooSmall": 0,
+      "badAspectRatio": 13,
+      "tooSmallFile": 606,
+      "tooLargeFile": 0,
+      "duplicate": 0,
+      "corrupted": 0
+    }
+  },
+  "config": {
+    "minWidth": 100,
+    "minHeight": 100,
+    "maxAspectRatio": 3,
+    "minAspectRatio": 0.33,
+    "minFileSize": 5000,
+    "maxFileSize": 10000000
+  }
+}

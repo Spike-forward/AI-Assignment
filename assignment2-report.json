@@ -1,0 +1,143 @@
+{
+  "timestamp": "2025-12-26T04:54:48.370Z",
+  "studentId": "19817751",
+  "topic": "人類/人形動漫角色，各類型的性別和職業",
+  "collection": {
+    "totalUrls": 5037,
+    "downloaded": 5037,
+    "processed": 4098,
+    "uniqueKeywords": 50,
+    "httpUrls": 2118,
+    "dataUrls": 2919
+  },
+  "cleaning": {
+    "total": 4098,
+    "passed": 3479,
+    "rejected": {
+      "tooSmall": 0,
+      "badAspectRatio": 13,
+      "tooSmallFile": 606,
+      "tooLargeFile": 0,
+      "duplicate": 0,
+      "corrupted": 0
+    }
+  },
+  "folders": {
+    "images": {
+      "count": 4098,
+      "totalSize": 343716305
+    },
+    "processed": {
+      "count": 4098,
+      "totalSize": 73620485
+    },
+    "cleaned": {
+      "count": 3479,
+      "totalSize": 340882409
+    }
+  },
+  "sources": {
+    "uniqueDomains": 386,
+    "topDomains": [
+      {
+        "domain": "encrypted-tbn0.gstatic.com",
+        "count": 347
+      },
+      {
+        "domain": "m.media-amazon.com",
+        "count": 158
+      },
+      {
+        "domain": "static.wikia.nocookie.net",
+        "count": 133
+      },
+      {
+        "domain": "i.pinimg.com",
+        "count": 101
+      },
+      {
+        "domain": "i.ebayimg.com",
+        "count": 61
+      },
+      {
+        "domain": "w0.peakpx.com",
+        "count": 49
+      },
+      {
+        "domain": "preview.redd.it",
+        "count": 44
+      },
+      {
+        "domain": "i.ytimg.com",
+        "count": 43
+      },
+      {
+        "domain": "i0.wp.com",
+        "count": 35
+      },
+      {
+        "domain": "ae01.alicdn.com",
+        "count": 30
+      }
+    ]
+  },
+  "keywords": {
+    "total": 50,
+    "topKeywords": [
+      {
+        "keyword": "Misaki Ayuzawa Maid Sama anime",
+        "count": 270
+      },
+      {
+        "keyword": "Virgo Fairy Tail anime maid",
+        "count": 184
+      },
+      {
+        "keyword": "Roberta Black Lagoon anime",
+        "count": 172
+      },
+      {
+        "keyword": "Entoma Vasilissa Zeta Overlord anime",
+        "count": 169
+      },
+      {
+        "keyword": "Rem Re:Zero anime maid",
+        "count": 164
+      },
+      {
+        "keyword": "Siesta Tantei wa Mou Shindeiru anime",
+        "count": 161
+      },
+      {
+        "keyword": "Mey-Rin Black Butler anime",
+        "count": 154
+      },
+      {
+        "keyword": "Ram Re:Zero anime maid",
+        "count": 149
+      },
+      {
+        "keyword": "Tohru Miss Kobayashi Dragon Maid anime",
+        "count": 131
+      },
+      {
+        "keyword": "Ryuuou no Oshigoto anime maid",
+        "count": 126
+      }
+    ]
+  },
+  "requirements": {
+    "imageCount": {
+      "required": "1000-5000",
+      "actual": 3479,
+      "passed": true
+    },
+    "cleaning": {
+      "passed": true
+    },
+    "sourceAnalysis": {
+      "passed": true,
+      "uniqueDomains": 386
+    }
+  }
+}
