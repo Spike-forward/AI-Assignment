@@ -1,0 +1,8 @@
+git rm --cached data.db
+git rm --cached -r images/
+git rm --cached -r cleaned/
+git rm --cached -r processed/
+git rm --cached -r rejected/
+git add .
+git commit -m "完成習作二：移除大型檔案，加入 .gitignore"
+git push
